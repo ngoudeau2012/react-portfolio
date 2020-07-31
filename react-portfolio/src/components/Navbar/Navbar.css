@@ -2,3 +2,8 @@
     background-color: #364f6b;
     padding: 1.5em;
 }
+.navbarName{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    vertical-align: middle;
+}

@@ -1,17 +1,14 @@
 import React from "react";
 import "./Navbar.css";
+import resume from "../../assets/images/resume.pdf"
 
 function Nav() {
+
+  console.log(resume)
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
-          <img
-            src="https://bulma.io/images/bulma-logo.png"
-            width="112"
-            height="28"
-          />
-        </a>
+        <h1 className="navbarName">Nicholas Goudeau</h1>
 
         <a
           role="button"
@@ -27,31 +24,13 @@ function Nav() {
       </div>
 
       <div id="navbarBasicExample" className="navbar-menu">
-        <div className="navbar-start">
-          <a className="navbar-item">Home</a>
-
-          <a className="navbar-item">Documentation</a>
-
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">More</a>
-
-            <div className="navbar-dropdown">
-              <a className="navbar-item">About</a>
-              <a className="navbar-item">Jobs</a>
-              <a className="navbar-item">Contact</a>
-              <hr className="navbar-divider" />
-              <a className="navbar-item">Report an issue</a>
-            </div>
-          </div>
-        </div>
-
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a className="button is-light">Log in</a>
+              
+              <a target="blank" class="button is-primary is-inverted is-outlined" href="https://www.linkedin.com/in/nicholasgoudeau/">LinkedIn</a>
+              <a target="blank" className="button is-primary is-inverted is-outlined" href="https://github.com/ngoudeau2012">GitHub</a>
+              <a target="blank" className="button is-primary is-inverted is-outlined" href={resume}>Resume</a>
             </div>
           </div>
         </div>
