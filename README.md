@@ -14,7 +14,7 @@ Since I started my coding journey, I naturally gravitated towards front end deve
 
 Please feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/nicholasgoudeau/) or [GubHub](https://github.com/ngoudeau2012)
 
-My resume and contact information can be found on my portfolio page as well.
+My resume and contact information can be found on my [portfolio page](https://ngoudeau2012.github.io/react-portfolio/) as well.
 
 Thank you again for taking the time to review my information.
 
