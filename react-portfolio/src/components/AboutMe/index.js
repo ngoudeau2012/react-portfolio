@@ -18,36 +18,7 @@ function AboutMe() {
             <p>
               <strong>Nick Goudeau</strong>
               <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas
-              non massa sem. Etiam finibus odio quis feugiat facilisis.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
-              elit a erat iaculis tempor non vitae sem. Donec fringilla ligula
-              vel tristique convallis. Donec imperdiet commodo enim in
-              porttitor. Etiam ultricies arcu vitae elementum pulvinar.
-              Vestibulum facilisis massa nec dui pretium, eget porta dui
-              feugiat. Etiam ultrices suscipit massa ut rutrum. Duis tempor nunc
-              justo, sit amet dignissim enim tincidunt ut. Phasellus ac
-              fringilla nisl. Nullam dignissim nulla sem, eu iaculis nibh
-              iaculis sed. Donec eu tincidunt risus. Phasellus fermentum dapibus
-              neque nec dapibus.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Integer vitae elit a erat iaculis tempor non
-              vitae sem. Donec fringilla ligula vel tristique convallis. Donec
-              imperdiet commodo enim in porttitor. Etiam ultricies arcu vitae
-              elementum pulvinar.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Integer vitae elit a erat iaculis tempor non
-              vitae sem. Donec fringilla ligula vel tristique convallis. Donec
-              imperdiet commodo enim in porttitor. Etiam ultricies arcu vitae
-              elementum pulvinar. Vestibulum facilisis massa nec dui pretium,
-              eget porta dui feugiat. Etiam ultrices suscipit massa ut rutrum.
-              Duis tempor nunc justo, sit amet dignissim enim tincidunt ut.
-              Phasellus ac fringilla nisl. Nullam dignissim nulla sem, eu
-              iaculis nibh iaculis sed. Donec eu tincidunt risus. Phasellus
-              fermentum dapibus neque nec dapibus.Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Integer vitae elit a erat iaculis
-              tempor non vitae sem. Donec fringilla ligula vel tristique
-              convallis. Donec imperdiet commodo enim in porttitor. Etiam
-              ultricies arcu vitae elementum pulvinar.
+              Full Stack Web Developer with a background in customer experience management, and a Certificate in Full-Stack Web Development from the University of Washington. A critical thinker with a desire for learning, and a passion for creating simple and effective user experiences.  Seeking a developer role where they can merge their technical skills with a background in customer experience to create impactful user experiences through the web.
             </p>
           </div>
           <nav className="level is-mobile">

@@ -10,7 +10,7 @@
     "Name": "Treehouse",
     "Image":"https://i.ibb.co/c280nHk/concert-Finder.png",
     "ScreenShot":"",
-    "Description":"An application that allows users to search cities for their current weather and 5-day forecast.",
+    "Description":"An application that allows users to search for music events happening based on their genre and location",
     "gitHubRepo":"https://github.com/gidmp/Treehouse",
     "deployedApp":"https://gidmp.github.io/Treehouse/"
 },
@@ -18,7 +18,7 @@
     "Name": "Daily Calendar",
     "Image":"https://i.ibb.co/J3Cy4WT/daily-Calendar.png",
     "ScreenShot":"",
-    "Description":"An application that allows users to search cities for their current weather and 5-day forecast.",
+    "Description":"An application that allows users to input and track daily task by the hour.",
     "gitHubRepo":"https://github.com/ngoudeau2012/daily_calendar_hw5",
     "deployedApp":"https://ngoudeau2012.github.io/daily_calendar_hw5/"
 },{
