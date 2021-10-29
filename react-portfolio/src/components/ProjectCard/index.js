@@ -3,15 +3,11 @@ import * as Projects from "../../utils/projects.json";
 import "./style.css"
 
 function ProjectCard() {
-  console.log(Projects);
   const projectsArr = Projects.default;
-  console.log(projectsArr);
   return (
-    <div>
+    <div class="flex">
       {projectsArr.map((project) => (
-        <div
-          className="card is-desktop"
-        >
+        <div className="card is-desktop">
           <div className="card-image">
             <figure className="image is-16by9">
               <img

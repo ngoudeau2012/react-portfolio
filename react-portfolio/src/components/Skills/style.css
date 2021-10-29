@@ -1,0 +1,46 @@
+@keyframes slide-left {
+    from {right:0px;}
+    to {left: 0px;}
+  }
+
+.skills-section{
+    width: 33%;
+}
+
+.skills-section .card{
+    width:60%;
+    /* position: relative;
+    left: 0; */
+    padding: 1rem 2rem;
+    min-height: unset;
+    animation-name: slide-left;
+    animation-duration: 2s;
+    transition: width .3s;
+    margin: auto;
+}
+
+.skills-section .card:hover{
+    width: 100%;
+}
+
+.card .sectionHeader{
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: .35rem;
+}
+
+    .card .sectionHeader::after{
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: rgb(128, 128, 128, .1);
+        left: 0;
+        bottom: 0;
+        transition: width .5s;
+    }
+
+    .card:hover .sectionHeader::after{
+        width: 100%;
+    }
