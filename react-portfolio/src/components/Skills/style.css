@@ -8,15 +8,17 @@
 }
 
 .skills-section .card{
-    width:60%;
-    /* position: relative;
-    left: 0; */
+    width: 70%;
+    justify-self: end;
+    position: relative;
+    /* right: 0px; */
+    margin: 0% auto;
     padding: 1rem 2rem;
     min-height: unset;
     animation-name: slide-left;
     animation-duration: 2s;
     transition: width .3s;
-    margin: auto;
+    text-align: center;
 }
 
 .skills-section .card:hover{
@@ -25,7 +27,7 @@
 
 .card .sectionHeader{
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-top: 0;
     margin-bottom: .35rem;
 }
@@ -33,14 +35,15 @@
     .card .sectionHeader::after{
         position: absolute;
         content: "";
-        width: 0%;
-        height: 2px;
-        background-color: rgb(128, 128, 128, .1);
-        left: 0;
+        height: 1px;
+        background-color: #E94F3740;
+        left: 40%;
+        right: 40%;
         bottom: 0;
-        transition: width .5s;
+        transition: right .3s, left .3s;
     }
 
     .card:hover .sectionHeader::after{
-        width: 100%;
+        right: 0;
+        left: 0;
     }

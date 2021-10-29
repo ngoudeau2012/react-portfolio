@@ -4,7 +4,7 @@ import "./style.css"
 
 function Skills(){
     return(
-        <div>
+        <div class="skills-section">
             <div className="header">
                 <h1 className="sectionHeader">Skills</h1>
             </div>

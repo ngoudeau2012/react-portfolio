@@ -15,9 +15,7 @@ function ProjectPortfolio(){
                     <ProjectCard />
                 </div>
             </div>
-            <div className="skills-section">
-                <Skills />
-            </div>
+            <Skills />
             
            
         
