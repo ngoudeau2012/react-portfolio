@@ -7,11 +7,10 @@
     width: 33%;
 }
 
-.skills-section .card{
-    width: 70%;
+.skills-section .skills.card{ 
+    flex: 1 0 45%;
     justify-self: end;
     position: relative;
-    /* right: 0px; */
     margin: 0% auto;
     padding: 1rem 2rem;
     min-height: unset;
@@ -21,8 +20,15 @@
     text-align: center;
 }
 
-.skills-section .card:hover{
-    width: 100%;
+.experience.card{
+    margin: 0% auto;
+    padding: 1rem 2rem;
+    min-height: unset;
+    animation-name: slide-left;
+    animation-duration: 2s;
+    transition: width .3s;
+    margin-bottom: 2rem;
+    font-size: .8rem;
 }
 
 .card .sectionHeader{
@@ -46,4 +52,30 @@
     .card:hover .sectionHeader::after{
         right: 0;
         left: 0;
-    }
+    }         
+    
+        .experience.card .sectionHeader::after{
+            position: absolute;
+            content: "";
+            height: 1px;
+            background-color: #E94F3740;
+            left: 0%;
+            right: 83%;
+            bottom: 0;
+            transition: right .5s, left .3s;
+        }
+
+        .experience.card:hover .sectionHeader::after{
+            right: 0;
+            left: 0;
+        }         
+
+.job-title{
+    font-size: .8rem;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: right;
+    display: inline-block;
+    position: relative;
+    right: 0;
+}
