@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectCard from "../ProjectCard";
 import "./style.css";
+import DarkModeButton from "../DarkModeButton"
+import DarkMode from "../DarkModeButton";
 
 function Skills() {
   return (

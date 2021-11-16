@@ -1,0 +1,58 @@
+.light-mode-button{
+    position: relative;
+    margin-bottom: .5rem;
+    height: 1.5rem;
+    width: 3rem;
+    background-color: #DBD3D8;
+    border-radius: 50px;
+    font-size: 12px;
+    transition: .2s linear all;
+    cursor: pointer;
+}
+
+.light-mode-button::after{
+    position: absolute;
+    content: "L";
+    top: -.075rem;
+    left: 0;
+    height: 1.65rem;
+    width: 1.7rem;
+    border-radius: 50px;
+    background-color: #EFF1F3;
+    /* border: #E94F37 2px solid; */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: .2s linear all;
+    text-align: center;
+    padding: .25rem;
+    font-weight: bolder;
+}
+
+.dark-mode-button{
+    position: relative;
+    margin-bottom: .5rem;
+    height: 1.5rem;
+    width: 3rem;
+    background-color: #4aaaa5;
+    border-radius: 50px;
+    font-size: 12px;
+    transition: .2s linear all;
+    cursor: pointer;
+}
+
+.dark-mode-button::after{
+    position: absolute;
+    content: "D";
+    top: -.075rem;
+    left: 45%;
+    height: 1.65rem;
+    width: 1.7rem;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: #223843;
+    /* border: #4aaaa5 2px solid; */
+    transition: .2s linear all;
+    color: white;
+    text-align: center;
+    padding: .25rem;
+    font-weight: bolder;
+}
