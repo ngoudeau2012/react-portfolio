@@ -1,5 +1,5 @@
 .sectionHeader{
-    color: #4aaaa5;
+    color: white;
       margin-top: .5em;
       margin-bottom: 0em;
       font-weight: bold;
@@ -7,4 +7,82 @@
   }
 hr{
     margin-top: 0;
+}
+
+.about-me-section{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    display: flex;
+    position: relative;
+    margin: auto;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.about-me-section::after{
+  position: absolute;
+  content: "";
+  left: -50%;
+  right: -50%;
+  top: 0;
+  bottom: 50%;
+  z-index: -1;
+  background-color: #04575D;
+}
+
+.about-me-section .text-section{
+  flex: 1 0 25em;
+}
+
+  .about-me-section .text-section .name{
+    position: relative;
+    font-size: 4em;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    color: #20353A;
+  }
+  
+  /* .about-me-section .text-section .name{
+    display: ;
+  } */
+
+.about-me-section .image-div{
+  flex: 0 0 25em;
+}
+
+.about-me-section .text-section{
+  margin: 4em;
+}
+
+div.intro-text + div.intro-text{
+  margin-top: 1em;
+}
+
+.link-buttons{
+  flex: 0 0 100%;
+  order: -1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3em;
+  gap: 1em 2em;
+  flex-wrap: wrap;
+}
+
+.link-buttons a{
+  background-color: #045157b9;
+  text-align: center;
+  padding: .3em 1.25em;
+  border-radius: 50px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: all .2s ease-in-out;
+  
+}
+
+.link-buttons a:hover, .link-buttons a:focus{
+  background-color: #045157;
+  color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }

@@ -1,6 +1,7 @@
 [{
-    "Name": "Aqir",
-    "Image":"https://i.ibb.co/p3h938B/aqir.png",
+    "Name": "AQIR",
+    "Image":"https://i.ibb.co/2v5y4b7/AqirSS.png",
+
     "ScreenShot":"",
     "Description":"AQIR is full-stack web application that allows users to buy and sell products from the comfort of their home.",
     "gitHubRepo":"https://github.com/ngoudeau2012/project_aqir",

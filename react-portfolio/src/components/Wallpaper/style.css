@@ -1,0 +1,8 @@
+.background{
+    transition: all .3s ease-in-out;
+}
+
+.dark.background{
+    background-color: #1F2933;
+    color: white;
+}
