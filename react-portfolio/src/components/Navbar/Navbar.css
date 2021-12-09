@@ -1,9 +1,10 @@
 .navbar{
     background-color: #04575D;
     padding: 1.5em;
+    transition: .2s background-color linear;
 }
     .dark.navbar{
-        background-color: #364f6b;
+        background-color: #263238;
     }
 
 .navbar-brand img{

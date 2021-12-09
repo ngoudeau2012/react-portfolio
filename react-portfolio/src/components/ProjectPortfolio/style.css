@@ -14,3 +14,7 @@ hr{
 .portfolio-section{
   flex: 1 0 60%;
 }
+
+.dark.portfolio-section .sectionHeader{
+  color: #E0F2F1;
+}

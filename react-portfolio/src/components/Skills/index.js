@@ -3,10 +3,16 @@ import ProjectCard from "../ProjectCard";
 import "./style.css";
 import DarkModeButton from "../DarkModeButton"
 import DarkMode from "../DarkModeButton";
+import {useTheme} from "../ThemeContext"
 
 function Skills() {
+
+  const darkTheme = useTheme();
+
+  const themeClass = darkTheme ? "skills-section" : "dark skills-section";
+
   return (
-    <div class="skills-section">
+    <div class={themeClass}>
       <div className="header">
         <h1 className="sectionHeader">Skills</h1>
       </div>

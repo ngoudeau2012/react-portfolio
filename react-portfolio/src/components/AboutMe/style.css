@@ -1,16 +1,16 @@
-.sectionHeader{
+/* .sectionHeader{
     color: white;
       margin-top: .5em;
       margin-bottom: 0em;
       font-weight: bold;
       font-size: 30px;
-  }
+  } */
 hr{
     margin-top: 0;
 }
 
 .about-me-section{
-    background-color: white;
+    background-color: #F5F5F5;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     display: flex;
@@ -29,6 +29,7 @@ hr{
   bottom: 50%;
   z-index: -1;
   background-color: #04575D;
+  transition: .2s background-color linear;
 }
 
 .about-me-section .text-section{
@@ -60,8 +61,7 @@ div.intro-text + div.intro-text{
 }
 
 .link-buttons{
-  flex: 0 0 100%;
-  order: -1;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -70,8 +70,13 @@ div.intro-text + div.intro-text{
   flex-wrap: wrap;
 }
 
+.about-me-section .link-buttons{
+  order: -1;
+}
+
 .link-buttons a{
   background-color: #045157b9;
+  position: relative;
   text-align: center;
   padding: .3em 1.25em;
   border-radius: 50px;
@@ -85,4 +90,79 @@ div.intro-text + div.intro-text{
   background-color: #045157;
   color: white;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/* %%%%%%%%% DARK THEME %%%%%%%%% */
+
+.dark.about-me-section{
+  background-color: #37474F;
+}
+
+.dark.about-me-section::after{
+  position: absolute;
+  content: "";
+  left: -50%;
+  right: -50%;
+  top: 0;
+  bottom: 50%;
+  z-index: -1;
+  background-color: #37474F;
+  transition: all .2s ease-in-out;
+}
+
+.dark.about-me-section .text-section .name{
+  color:  #CFD8DC;
+}
+
+.dark.about-me-section .link-buttons a{
+  color: #90A4AE;
+}
+
+.dark.about-me-section .link-buttons a, .dark.project-card .link-buttons a{
+  background-color: transparent;
+  text-align: center;
+  padding: .3em 1.25em;
+  box-shadow:none;
+  transition: all .2s ease-in-out;
+}
+
+.dark.project-card .link-buttons a{
+  padding: .3em 1.25em;
+  padding-left: 0px; 
+}
+
+
+.dark.about-me-section .link-buttons a:hover, .dark.about-me-section  .link-buttons a:focus, .dark.project-card .link-buttons a:hover, .dark.project-card .link-buttons a:focus{
+  color: #E0F2F1;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.dark.about-me-section .link-buttons a::after {
+  content: "";
+  position: absolute;
+  right: 40%;
+  left: 40%;
+  bottom: .15em;
+  background: #ff4d29b9;
+  height: 1px;
+  transition: all .2s ease-in-out;
+}
+  .dark.dark.project-card .link-buttons a::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    left: 0%;
+    bottom: .15em;
+    background: #ff4d29b9;
+    height: 1px;
+    transition: all .2s ease-in-out;
+  }
+
+  .dark.dark.project-card .link-buttons a:hover::after {
+    width: 70%;
+  }
+
+.dark.about-me-section .link-buttons a:hover::after {
+  right: 30%;
+  left: 30%;
 }

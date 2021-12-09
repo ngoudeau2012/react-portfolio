@@ -2,6 +2,7 @@
     flex: 0 0 100%;
     min-height: 300px;
     border-radius: 10px;
+    background-color: #F5F5F5;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     position: relative;
   }
@@ -29,6 +30,7 @@ footer{
     display: flex;
     flex: 1 0 100%;
     /* max-width: 48%; */
+    background-color: #F5F5F5;
     border-radius: 10px;
     overflow:hidden;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -36,7 +38,7 @@ footer{
 .project-card .left-side{
     width: 25%;
     padding: 3em 0em;
-    background-color: #8DAA9D;
+    background-color: #FF8A65;
 }
 
 .project-card .left-side img{
@@ -51,17 +53,154 @@ footer{
     transform: translateY(-50%);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.253);
     border-radius: 10px;
+    transition: .1s transform linear;
 }
+    .project-card:hover .left-side img{
+        transform: translateY(-50%) scale(1.15); 
+    }
+
 
 .project-card .right-side{
     width: 75%;
-    padding: 3em;
+    padding: 2em;
     padding-left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.project-card .right-side .text-section{
+    margin-bottom: 1em;
+}
+
+.project-card .link-buttons{
+    padding-bottom: 0em;
+    justify-content: start;
+    gap: .5em;
+    margin: 0;
+    justify-self: end;
+  }
+
     .project-card .project-name{
-        font-size: 2em;
+        font-size: 1.8em;
+        position: relative;
         font-weight: 700;
         font-family: 'Nunito', sans-serif;
         color: #20353A;
+    }
+    
+    .project-card .project-name::after{
+        position: absolute;
+        content: "";
+        height: 1px;
+        background-color: #FFAB91;
+        left: 0%;
+        right: 70%;
+        bottom: 3px;
+        transition: right .3s, left .3s;
+    }
+
+    .project-card:hover .project-name::after{
+        right: 0;
+        left: 0;
+    } 
+
+/* %%%%%%%% DARK THEME %%%%%%% */
+
+.dark.project-card .project-name{
+    color: #E0F2F1;
+    position: relative;
+}
+
+.dark.project-card .project-name::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #e94f37;
+    left: 0%;
+    right: 70%;
+    bottom: 3px;
+    transition: right .3s, left .3s;
+}
+
+.project-card:hover .project-name::after,.dark.project-card:hover .project-name::after{
+    right: 0;
+    left: 0;
+} 
+
+.dark.project-card .left-side, .dark.project-card .right-side, .dark.project-card{
+    background-color: #37474F;
+}
+
+    @media (max-width: 1085px){
+        .project-card{
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            overflow:hidden;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+
+        .project-card .left-side{
+            width: 100%;
+            padding: 2em 0em;
+            background-color: white;
+            position: relative;
+        }
+            .project-card .left-side::after{
+                background-color: #FF8A65;
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 25%;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+        
+        .project-card .left-side img{
+            width: 80%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            object-position: top;
+            max-width: unset;
+            position: relative;
+            top: 0%;
+            left: 50%;
+            transform: translateY(-0%) translateX(-50%);
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.253);
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        .project-card:hover .left-side img{
+            transform: translateY(-0%) translateX(-50%) scale(1.15); 
+        }
+        
+        .project-card .right-side{
+            width: 100%;
+            padding: 0em 10% 3em 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card .right-side .text-section{
+            margin-bottom: 1em;
+        }
+        
+        .project-card .link-buttons{
+            padding-bottom: 0em;
+            justify-content: start;
+            gap: .5em;
+            justify-self: end;
+          }
+
+        /* %%%%%%%% DARK THEME %%%%%%% */
+
+        .dark.project-card .left-side::after{
+            background-color: #455A64;
+        }
+
+       
     }

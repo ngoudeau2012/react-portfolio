@@ -50,8 +50,8 @@
     }
 
     .card:hover .sectionHeader::after{
-        right: 0;
-        left: 0;
+        right: 15%;
+        left: 15%;
     }         
     
         .experience.card .sectionHeader::after{
@@ -78,4 +78,19 @@
     display: inline-block;
     position: relative;
     right: 0;
+}
+
+/* %%%%% DARK THEME %%%%% */
+
+.dark.skills-section .sectionHeader{
+    color: #CFD8DC;
+}
+
+.dark.skills-section .card{
+    background-color: #37474F;
+    color: #CFD8DC;
+}
+
+.dark.skills-section .sectionHeader::after{
+    background-color: #ff4d29b9;
 }

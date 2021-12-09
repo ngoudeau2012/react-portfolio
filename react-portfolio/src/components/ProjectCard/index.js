@@ -1,19 +1,27 @@
 import React from "react";
 import * as Projects from "../../utils/projects.json";
+import { useTheme } from "../ThemeContext";
 import "./style.css"
 
 function ProjectCard() {
+
+  const darkTheme = useTheme();
+
+  const themeClass = darkTheme ? "project-card" : "dark project-card";
+
   const projectsArr = Projects.default;
   return (
     <div class="flex">
       {projectsArr.map((project) => (
-        <div className="project-card">
+        <div className={themeClass}>
           <div className="left-side">
               <img src={project.Image}/>
           </div>
           <div className="right-side">
-          <div className="project-name">{project.Name}</div>
-          <div>{project.Description}</div>
+            <div className="text-section">
+            <div className="project-name">{project.Name}</div>
+            <div>{project.Description}</div>
+            </div>
           <div className="link-buttons">
             <a href={project.gitHubRepo}>Repo</a>
             <a href={project.deployedApp}>LinktoPage</a>
