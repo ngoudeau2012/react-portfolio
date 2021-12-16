@@ -49,9 +49,13 @@ function Skills() {
             </div>
             <hr/>
             <div className="experience card">
-                <p className="sectionHeader">Amazon <span className="job-title"></span></p>
-                <p className="job-title">Lead Developer | GREF Hub Online</p>
+                <div className="sectionHeader">Amazon <span className="job-title"></span></div>
+                <div className="job-title">Lead Developer | GREF Hub Online</div>
+                <div className="discription">Lead developer for the GREF Hub Online platform </div>
                 <ul>
+                  <li>
+                    
+                  </li>
                     <li>Led development of component and template galleries allowing for agile development and migration of wiki pages to meet
 the new brand guidelines of GREF.</li>
                 </ul>

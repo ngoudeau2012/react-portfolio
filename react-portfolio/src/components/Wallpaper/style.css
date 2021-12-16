@@ -1,5 +1,6 @@
 .background{
     transition: all .3s ease-in-out;
+    padding-bottom: 3em;
 }
 
 .dark.background{

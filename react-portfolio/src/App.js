@@ -5,6 +5,7 @@ import Container from './components/Container'
 import AboutMe from './components/AboutMe'
 import ProjectPortfolio from './components/ProjectPortfolio'
 import Wallpaper from "./components/Wallpaper"
+import Footer from "./components/footer"
 import { ThemeProvider } from "./components/ThemeContext"
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
               <ProjectPortfolio />
             </Container>
         </Wallpaper>
+        <Footer />
       </ThemeProvider>
    
   );

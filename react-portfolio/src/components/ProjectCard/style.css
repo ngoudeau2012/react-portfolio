@@ -128,7 +128,11 @@ footer{
     left: 0;
 } 
 
-.dark.project-card .left-side, .dark.project-card .right-side, .dark.project-card{
+.dark.project-card .left-side{
+    background-color: #455A64;
+}
+
+    .dark.project-card .right-side, .dark.project-card{
     background-color: #37474F;
 }
 

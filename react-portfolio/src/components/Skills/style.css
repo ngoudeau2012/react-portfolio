@@ -37,6 +37,9 @@
     margin-top: 0;
     margin-bottom: .35rem;
 }
+    .experience.card .sectionHeader{
+        font-size: 1.8em;
+    }
 
     .card .sectionHeader::after{
         position: absolute;
